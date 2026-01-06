@@ -1,0 +1,27 @@
+{
+  "malicious_ips": [
+    "203.0.113.10",
+    "198.51.100.5"
+  ],
+  "suspicious_payload_signatures": [
+    "union select",
+    "cmd.exe",
+    "DROP TABLE",
+    "password=",
+    "eval("
+  ],
+  "port_scan": {
+    "port_threshold": 20,
+    "time_window_seconds": 10
+  },
+  "high_rate": {
+    "packets_per_sec_threshold": 50,
+    "time_window_seconds": 5
+  },
+  "suspicious_ports": [
+    23,
+    2323,
+    3389,
+    22
+  ]
+}
